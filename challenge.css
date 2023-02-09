@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 article {
   border: 5px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
 }
 h1 {
   background-color: #f7f7f7;
+  text-transform: uppercase;
   margin: auto;
   text-align: center;
+  font-size: 22px;
+  padding: 15px;
 }
 .price {
   font-weight: bold;
@@ -24,12 +31,14 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 20px;
 }
 .info {
-  font-size: 22px;
+  /* font-size: 22px; */
+  margin-bottom: 10px;
 }
 .subcontainer1 {
-  border: 5px solid black;
+  /* border: 5px solid black; */
 }
 .more-info-link {
   color: black;
@@ -37,13 +46,15 @@ h1 {
 .more-info-link:hover {
   text-decoration: none;
 }
-.container-1 {
+.container {
   display: flex;
+  gap: 30px;
 }
 .colors {
   margin-top: 30px;
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 .color-black {
   background-color: black;
@@ -74,4 +85,47 @@ h1 {
   background-color: brown;
   height: 25px;
   width: 25px;
+}
+.product-details {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.subcontainer1 {
+  flex: 1;
+}
+.subcontainer2 {
+  margin-top: 20px;
+  flex: 1;
+}
+li {
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+.btn {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  border-top: 4px solid black;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+h1::after {
+  content: "sale";
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: -18px;
+  left: -43px;
+  font-size: 12px;
+  padding: 7px 15px;
+  letter-spacing: 2px;
 }
